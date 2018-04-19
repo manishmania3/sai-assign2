@@ -1,0 +1,92 @@
+html {
+  background: url(https://scontent.fhyd4-1.fna.fbcdn.net/v/t31.0-8/27023996_2234242660050098_6328630248680008493_o.jpg?_nc_cat=0&oh=6b9fddf6213455adfa643ff84bad3c0b&oe=5B5EE403)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  font: 300 14px/18px Roboto;
+  
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+header{
+    padding: 0;
+    color: white;
+    background-color: black;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+footer{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: both;
+    text-align: right;
+}
+nav {
+    float: left;
+    width: 20%;
+    margin: auto;
+    padding: 1em;
+}
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    width: auto;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	background-color: grey;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: lightblue;}
+}

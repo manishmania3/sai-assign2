@@ -1,0 +1,288 @@
+html {
+  background: url(https://scontent.fhyd4-1.fna.fbcdn.net/v/t31.0-8/27023996_2234242660050098_6328630248680008493_o.jpg?_nc_cat=0&oh=6b9fddf6213455adfa643ff84bad3c0b&oe=5B5EE403)
+    no-repeat left  fixed;
+  background-size: cover;
+}
+
+body {
+  font: 300 14px/18px Roboto;
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+header{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+footer{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: both;
+    text-align: right;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+
+.muck-up {
+  width: 310px;
+  height: 545px;
+  margin: 5em auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background: url(https://scontent.fhyd4-1.fna.fbcdn.net/v/t1.0-9/14192801_1927049620769405_3995001135409593614_n.jpg?_nc_cat=0&oh=bdf3f657b3835c6aea9e0924b7ff8290&oe=5B661D87)
+    no-repeat top /contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(71, 32, 84, 0.5);
+}
+
+.muck-up > .top {
+  position: relative;
+  min-height: 240px;
+  padding: 15px;
+  color: #fff;
+}
+
+.top .nav span {
+  float: center;
+  display: block;
+}
+
+.nav p {
+  margin-top: 2px;
+  display: inline-block;
+  float: left;
+  vertical-align:top;
+}
+
+
+.ion-android-menu {
+  font-size: 24px;
+  margin-right: 17px;
+}
+
+.nav .ion-ios-more-outline {
+  font-size: 38px;
+  float: right !important;
+}
+nav {
+    float: left;
+    width: 20%;
+    margin: auto;
+    padding: 1em;
+	
+}
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    width: auto;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	background-color: grey;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+.user-profile {
+  margin-top: 90px;
+}
+
+.user-profile img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 24px;
+}
+
+.user-details p {
+  font-size: 11px;
+}
+
+.user-details {
+  float: left;
+  margin-top: 5px;
+  vertical-align: bottom;
+}
+
+.user-details h4 {
+  font-size: 18px;
+}
+
+.muck-up .bottom {
+  background-color: #fff;
+  min-height: 303px;
+  z-index: 1;
+  padding: 35px;
+  position: relative;
+  color: #222;
+  padding-top: 0px;
+}
+
+.bottom:after {
+  content: "";
+  position: absolute;
+  top: -46px;
+  background: #fff;
+  left: -22px;
+  right: 0;
+  height: 100px;
+  transform: rotate(10deg);
+  width: 337px;
+  z-index: -1;
+}
+
+.bottom .title {
+  margin-bottom: 20px;
+}
+
+.bottom .title h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.title small {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul.details .d-left {
+  font-size: 13px;
+  display: inline-block;
+}
+
+ul.details .d-right {
+  float: right;
+  font-size: 13px;
+  color: #888;
+}
+
+
+ul.details li {
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 8;
+}
+
+ul.details li:after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 8px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+ul.details li.red:after {
+  background: #ff3163;
+}
+
+ul.details li.green:after {
+  background: #54d6c7;
+}
+
+ul.details li.yellow:after {
+  background: #eab429;
+}
+
+ul.details::after {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 1px;
+  background: #eee;
+  left: 20px;
+  top: -68px;
+}
+
+ul li.hang {
+  margin-bottom: 48px;
+}
+
+ul li.hang img {
+  float: left;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
